@@ -1,12 +1,15 @@
-requires globally: node, gulp
+#### Prerequisites
+ - you have node version manager installed or v9.5.0 as current node version
+ - you have gulp installed globally in this node version (9.5.0) (npm install -g gulp)
 
-1. clone repo
-2. npm install
-3. gulp
-4. http://localhost:5000
+#### Running locally
+1. clone repo `git clone git@bitbucket.org:tylermadison/twitterfp.git`
+2. `nvm use will` switch to 9.5.0 if not already current node version...
+3. `npm install`
+4. `npm start`
+4. Go to http://localhost:3000 in browser
 
-
-
-[ ![Codeship Status for t2d_tyler/Twitter Viz](https://codeship.com/projects/d0a2fe50-5a61-0132-8857-46545b4ba6c4/status)](https://codeship.com/projects/50369)
-
-
+#### Running locally in Docker
+1. `docker build -t twitterfp .`
+2. `docker run -d -p 3000:80 --rm twitterfp`
+3. Go to http://localhost:3000 in browser
